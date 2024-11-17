@@ -2,4 +2,4 @@
 
 Create for fun
 
-demo: [https://z-un-flag.vercel.app/](https://z-un-flag.vercel.app/)
+demo: [https://z-un-flag.vercel.app](https://z-un-flag.vercel.app)
