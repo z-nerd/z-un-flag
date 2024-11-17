@@ -1,0 +1,134 @@
+$name: animate0;
+$d: 2s;
+
+.#{$name} {
+  & #barbados {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale4 calc(#{$d} * 0.5) linear forwards;
+  }
+
+  & #bahamas {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale4 calc(#{$d} * 0.5) linear calc(#{$d} * 0.5) forwards;
+  }
+
+  & #cuba {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale4 calc(#{$d} * 0.5) linear calc(#{$d} * 1) forwards;
+  }
+
+  & #dominican {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale4 calc(#{$d} * 0.5) linear calc(#{$d} * 1.5) forwards;
+  }
+
+  & #uk {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale4 #{$d} linear calc(#{$d} * 2) forwards;
+  }
+
+  & #ice {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale #{$d} linear calc(#{$d} * 3) forwards;
+  }
+
+  & #america {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale #{$d} linear calc(#{$d} * 4) forwards;
+  }
+
+  & #asian {
+    transform-origin: center;
+    transform-box: fill-box;
+    transform: scale(0);
+    animation: #{$name}-scale #{$d} linear calc(#{$d} * 5) forwards;
+  }
+
+  & #radar {
+    opacity: 0;
+    animation: #{$name}-fade #{$d} linear calc(#{$d} * 6) forwards;
+  }
+
+  & #arcL {
+    transform: translateY(-999px);
+    animation: #{$name}-rotateL calc(#{$d} * 1.7) linear calc(#{$d} * 7) forwards;
+    transform-origin: center;
+  }
+
+  & #arcR {
+    transform: scaleX(-1) translateY(999px);
+    animation: #{$name}-rotateR calc(#{$d} * 1.7) linear calc(#{$d} * 7) forwards;
+    transform-origin: center;
+  }
+}
+
+@keyframes #{$name}-rotateL {
+  0% {
+    transform: rotate(-180deg) translateY(-999px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: scaleX(-1) rotate(0deg);
+  }
+}
+
+@keyframes #{$name}-rotateR {
+  0% {
+    transform: scaleX(-1) rotate(180deg) translateY(999px);
+  }
+  50% {
+    transform: scaleX(-1) rotate(180deg) translateY(0px);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes #{$name}-scale {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes #{$name}-scale4 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes #{$name}-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
