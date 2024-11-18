@@ -1,5 +1,5 @@
 $name: animate0;
-$d: 2s;
+$d: 1s;
 
 .#{$name} {
   & #barbados {
@@ -130,5 +130,14 @@ $d: 2s;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes #{$name}-blink {
+  from {
+    fill: red;
+  }
+  to {
+    fill: yellow;
   }
 }
